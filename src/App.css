@@ -1,0 +1,48 @@
+#root {
+	width: 1280px;
+	margin: 0 auto;
+	background-color: white;
+	color: black;
+	padding: 10px;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.container_row {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 100px 600px;
+	gap: 10px;
+	height: 60px;
+}
+
+.events {
+	border-bottom: 1px solid black;
+}
+
+time {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin-bottom: -10px;
+}
+
+.event__box {
+	position: absolute;
+	z-index: 2;
+	color: white;
+	border-radius: 10px;
+	/* padding-inline: 20px; */
+}
+.event__box.high {
+	background-color: red;
+}
+.event__box.medium {
+	background-color: yellow;
+	color: black;
+}
+.event__box.low {
+	background-color: blue;
+}
